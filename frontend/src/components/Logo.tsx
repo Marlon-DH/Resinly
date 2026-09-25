@@ -14,30 +14,41 @@ export default function Logo({ size = 64 }: { size?: number }) {
           <stop offset="0%" stopColor="#3b82f6" />
           <stop offset="100%" stopColor="#ffffff" />
         </linearGradient>
+
         <linearGradient id="starGrad" x1="0" x2="1">
           <stop offset="0%" stopColor="#ff9a2a" />
           <stop offset="100%" stopColor="#ffd54d" />
         </linearGradient>
-      </defs>
 
-      <rect width="64" height="64" rx="12" fill="transparent" />
-
-      <defs>
+        {/* Máscara da lua */}
         <mask id="crescentMask">
           <rect width="64" height="64" fill="white" />
-          {/* círculo que vai "cortar" parte da lua */}
-          <circle cx="40" cy="26" r="18" fill="black" />
+
+          <circle
+            cx="40"
+            cy="26"
+            r="18"
+            fill="black"
+          />
         </mask>
 
-        {/* Forma de estrela (unitária) usada por <use/> e escalada */}
-        <polygon
-          id="starShape"
-          points="0,-1 0.2351,-0.3236 0.9511,-0.3090 0.3804,0.1236 0.5878,0.8090 0,0.4 -0.5878,0.8090 -0.3804,0.1236 -0.9511,-0.3090 -0.2351,-0.3236"
-        />
+        {/* Brilho em formato de estrela */}
+        <g id="sparkle">
+          <path
+            d="
+              M 0 -1
+              C 0.12 -0.35 0.35 -0.12 1 0
+              C 0.35 0.12 0.12 0.35 0 1
+              C -0.12 0.35 -0.35 0.12 -1 0
+              C -0.35 -0.12 -0.12 -0.35 0 -1
+              Z
+            "
+          />
+        </g>
       </defs>
 
       <g transform="translate(4,4)">
-        {/* Lua minguante: desenhada como círculo com máscara para formar crescente */}
+        {/* LUA MINGUANTE */}
         <circle
           cx="28"
           cy="28"
@@ -46,12 +57,31 @@ export default function Logo({ size = 64 }: { size?: number }) {
           mask="url(#crescentMask)"
         />
 
-        {/* Estrelas maiores em volta (usar shape unit e escalar) */}
+        {/* ESTRELAS / BRILHOS */}
         <g fill="url(#starGrad)">
-          <use href="#starShape" transform="translate(6,6) scale(3.6)" />
-          <use href="#starShape" transform="translate(50,10) scale(3.0)" />
-          <use href="#starShape" transform="translate(12,50) scale(3.2)" />
-          <use href="#starShape" transform="translate(44,42) scale(3.4)" />
+          {/* Brilho 1 */}
+          <use
+            href="#sparkle"
+            transform="translate(6,6) scale(4)"
+          />
+
+          {/* Brilho 2 */}
+          <use
+            href="#sparkle"
+            transform="translate(50,10) scale(3.4)"
+          />
+
+          {/* Brilho 3 */}
+          <use
+            href="#sparkle"
+            transform="translate(12,50) scale(3.7)"
+          />
+
+          {/* Brilho 4 */}
+          <use
+            href="#sparkle"
+            transform="translate(44,42) scale(3.9)"
+          />
         </g>
       </g>
     </svg>
