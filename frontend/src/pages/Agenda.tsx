@@ -1,12 +1,16 @@
+
 import NavBar from "../components/NavBar";
 
 type Page = "home" | "agenda" | "characters" | "weapons";
 
 const agendaItems = [
-  { day: "SEG", title: "Planejamento semanal", time: "09:00 - 10:00" },
-  { day: "TER", title: "Revisão de personagens", time: "14:00 - 15:00" },
-  { day: "QUA", title: "Controle de armas", time: "11:30 - 12:30" },
-  { day: "SEX", title: "Metas da semana", time: "16:00 - 17:00" },
+  { day: "SEG", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "TER", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "QUA", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "QUI", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "SEX", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "SÁB", title: "Planejamento semanal", time: "00:00 - 23:00" },
+  { day: "DOM", title: "Planejamento semanal", time: "00:00 - 23:00" },
 ];
 
 export default function Agenda({
@@ -44,3 +48,4 @@ export default function Agenda({
     </div>
   );
 }
+

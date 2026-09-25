@@ -1,8 +1,8 @@
 :root {
   --topbar-height: 84px;
-  --bg-dark: #10141a;
-  --bg-mid: #171d28;
-  --panel: rgba(17, 21, 27, 0.86);
+  --bg-base: #0b0e13;
+  --bg-surface: #10141a;
+  --bg-panel: rgba(16, 20, 26, 0.82);
   --border: rgba(255, 255, 255, 0.08);
   --text: #edf3ff;
   --muted: #b5c2d5;
@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  background: #0b0e13;
+  background: var(--bg-base);
 }
 
 .topbar {
@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 28px;
-  background: rgba(10, 13, 18, 0.72);
+  background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(10px);
   color: var(--text);
@@ -78,14 +78,82 @@ body {
 
 .home-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
+  background: var(--bg-base);
   color: var(--text);
 }
 
 .agenda-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
+  background: var(--bg-base);
   color: var(--text);
+}
+
+.home-main {
+  padding: calc(var(--topbar-height) + 30px) 24px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-layout {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.home-card {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.home-card-large {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-card-small {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-side-stack {
+  display: grid;
+  gap: 20px;
+}
+
+.home-kicker {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.home-card-large h1 {
+  margin: 0 0 14px;
+  font-size: clamp(2rem, 3.2vw, 4rem);
+  line-height: 1.05;
+}
+
+.home-card-large p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.home-card-small h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 .agenda-main {
@@ -96,7 +164,7 @@ body {
 
 .agenda-card {
   width: min(760px, 100%);
-  background: rgba(16, 20, 26, 0.82);
+  background: var(--bg-panel);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 24px;

@@ -8,7 +8,7 @@ export default function Armas({
   onNavigate: (p: Page) => void;
 }) {
   return (
-    <div className="home-page">
+    <div className="armas-page">
       <NavBar onNavigate={onNavigate} />
     </div>
   );

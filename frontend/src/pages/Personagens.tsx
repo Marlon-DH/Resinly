@@ -8,7 +8,7 @@ export default function Personagens({
   onNavigate: (p: Page) => void;
 }) {
   return (
-    <div className="home-page">
+    <div className="personagens-page">
       <NavBar onNavigate={onNavigate} />
     </div>
   );
