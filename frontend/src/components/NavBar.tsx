@@ -1,3 +1,4 @@
+
 import Logo from "./Logo";
 
 type Page = "home" | "agenda" | "characters" | "weapons";
@@ -11,6 +12,7 @@ export default function NavBar({
     <header className="fixed inset-x-0 top-0 z-10 flex min-h-[84px] flex-wrap items-center justify-between gap-x-3 border-b border-white/10 bg-[#10141a]/95 px-4 py-3 backdrop-blur-sm sm:px-7">
       <div className="flex shrink-0 items-center gap-2 sm:gap-3">
         <Logo size={46} />
+
         <span className="text-lg font-bold tracking-[0.08em] text-[#edf3ff] [font-family:'Cinzel_Decorative',serif]">
           Resinly
         </span>
@@ -36,6 +38,7 @@ export default function NavBar({
         >
           Principal
         </button>
+
         <button
           type="button"
           className="rounded-full px-1.5 py-2 text-[11px] text-[#b5c2d5] transition hover:bg-white/5 hover:text-[#edf3ff] sm:px-3 sm:text-sm"
@@ -43,6 +46,7 @@ export default function NavBar({
         >
           Agenda
         </button>
+
         <button
           type="button"
           className="rounded-full px-1.5 py-2 text-[11px] text-[#b5c2d5] transition hover:bg-white/5 hover:text-[#edf3ff] sm:px-3 sm:text-sm"
@@ -50,6 +54,7 @@ export default function NavBar({
         >
           Personagens
         </button>
+
         <button
           type="button"
           className="rounded-full px-1.5 py-2 text-[11px] text-[#b5c2d5] transition hover:bg-white/5 hover:text-[#edf3ff] sm:px-3 sm:text-sm"
@@ -58,6 +63,20 @@ export default function NavBar({
           Armas
         </button>
       </nav>
+
+      <button
+        type="button"
+        className="flex shrink-0 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-[#edf3ff] transition hover:border-[#a9c4ff]/40 hover:bg-white/10"
+      >
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#a9c4ff]/15 text-[#a9c4ff]">
+          👤
+        </span>
+
+        <span className="hidden sm:inline">
+          Entrar
+        </span>
+      </button>
     </header>
   );
 }
+
