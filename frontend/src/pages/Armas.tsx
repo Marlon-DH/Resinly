@@ -8,7 +8,7 @@ export default function Armas({
   onNavigate: (p: Page) => void;
 }) {
   return (
-    <div className="pagina-armas">
+    <div className="min-h-screen bg-[#0b0e13] text-[#edf3ff]">
       <NavBar onNavigate={onNavigate} />
     </div>
   );

@@ -1,21 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Uncial+Antiqua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
-* {
-  box-sizing: border-box;
+:root {
+  color-scheme: dark;
 }
+
 body {
   margin: 0;
   min-width: 320px;
-  color: #2c2935;
-  background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+  color: #edf3ff;
+  background: #0b0e13;
   font-family: "DM Sans", Arial, sans-serif;
 }
-button,
-select {
-  font: inherit;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-button {
-  cursor: pointer;
+
+button,
+input {
+  font: inherit;
 }

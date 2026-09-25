@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Agenda from "./pages/Agenda";
 import Home from "./pages/Home";
 import Personagens from "./pages/Personagens";
