@@ -1,4 +1,3 @@
-
 import NavBar from "../components/NavBar";
 
 type Page = "home" | "agenda" | "characters" | "weapons";
@@ -39,4 +38,3 @@ export default function Home({
     </div>
   );
 }
-
