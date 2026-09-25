@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Logo({ size = 64 }: { size?: number }) {
   return (
     <svg
