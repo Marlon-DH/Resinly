@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  characters Character[]
+  weapons    Weapon[]
+  builds     Build[]
+}
+
+model Character {
+  id          String   @id @default(cuid())
+  name        String
+  element     String?
+  rarity      Int?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  builds      Build[]
+}
+
+model Weapon {
+  id          String   @id @default(cuid())
+  name        String
+  type        String?
+  rarity      Int?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  builds      Build[]
+}
+
+model Build {
+  id          String   @id @default(cuid())
+  title       String
+  notes       String?
+  priority    Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  characterId String?
+  character   Character? @relation(fields: [characterId], references: [id], onDelete: SetNull)
+
+  weaponId    String?
+  weapon      Weapon? @relation(fields: [weaponId], references: [id], onDelete: SetNull)
+}
