@@ -1,4 +1,3 @@
-
 import NavBar from "../components/NavBar";
 
 type Page = "home" | "agenda" | "characters" | "weapons";
@@ -19,24 +18,24 @@ export default function Agenda({
   onNavigate: (p: Page) => void;
 }) {
   return (
-    <div className="agenda-page">
+    <div className="pagina-agenda">
       <NavBar onNavigate={onNavigate} />
 
-      <main className="agenda-main">
-        <section className="agenda-card">
-          <div className="agenda-header">
+      <main className="conteudo-agenda">
+        <section className="cartao-agenda">
+          <div className="cabecalho-agenda">
             <div>
-              <p className="agenda-kicker">Agenda</p>
+              <p className="rotulo-agenda">Agenda</p>
               <h1>Planejamento</h1>
             </div>
           </div>
 
-          <div className="agenda-list">
+          <div className="lista-agenda">
             {agendaItems.map((item) => (
-              <div key={item.day} className="agenda-item">
-                <span className="agenda-day">{item.day}</span>
+              <div key={item.day} className="item-agenda">
+                <span className="dia-agenda">{item.day}</span>
 
-                <div className="agenda-copy">
+                <div className="texto-agenda">
                   <strong>{item.title}</strong>
                   <span>{item.time}</span>
                 </div>
@@ -48,4 +47,3 @@ export default function Agenda({
     </div>
   );
 }
-

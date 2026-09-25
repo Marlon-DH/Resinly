@@ -8,13 +8,22 @@ export default function NavBar({
   onNavigate: (p: Page) => void;
 }) {
   return (
-    <header className="topbar">
-      <div className="brand-wrap">
+    <header className="barra-principal">
+      <div className="marca-wrap">
         <Logo size={46} />
-        <span className="brand-name">Resinly</span>
+        <span className="nome-marca">Resinly</span>
       </div>
 
-      <nav className="topbar-nav" aria-label="Navegação principal">
+      <div className="barra-pesquisa-wrap">
+        <input
+          type="text"
+          className="barra-pesquisa"
+          placeholder="Buscar..."
+          aria-label="Buscar"
+        />
+      </div>
+
+      <nav className="menu-navegacao" aria-label="Navegação principal">
         <button type="button" onClick={() => onNavigate("home")}>
           Principal
         </button>
