@@ -18,10 +18,6 @@ export default function Personagens({
             <p className="eyebrow">Personagens</p>
           </div>
         </div>
-        <nav className="topbar-nav">
-          <button onClick={() => onNavigate("weapons")}>Armas</button>
-          <button onClick={() => onNavigate("characters")}>Personagens</button>
-        </nav>
       </header>
     </div>
   );
