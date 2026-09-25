@@ -1,24 +1,15 @@
-import Logo from "../components/Logo";
+import NavBar from "../components/NavBar";
 
-type Page = "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons";
 
 export default function Personagens({
   onNavigate,
 }: {
   onNavigate: (p: Page) => void;
 }) {
-  void onNavigate;
   return (
-    <div>
-      <header className="topbar">
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <Logo size={64} />
-          <div>
-            <h1 className="site-title">Resinly</h1>
-            <p className="eyebrow">Personagens</p>
-          </div>
-        </div>
-      </header>
+    <div className="home-page">
+      <NavBar onNavigate={onNavigate} />
     </div>
   );
 }

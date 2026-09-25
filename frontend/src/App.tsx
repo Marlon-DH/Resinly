@@ -1,13 +1,18 @@
 import { useState } from "react";
 import "./App.css";
+import Agenda from "./pages/Agenda";
 import Home from "./pages/Home";
 import Personagens from "./pages/Personagens";
 import Armas from "./pages/Armas";
 
-type Page = "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons";
 
 function App() {
-  const [page, setPage] = useState<Page>("agenda");
+  const [page, setPage] = useState<Page>("home");
+
+  if (page === "agenda") {
+    return <Agenda onNavigate={setPage} />;
+  }
 
   if (page === "characters") {
     return <Personagens onNavigate={setPage} />;
