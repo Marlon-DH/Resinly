@@ -7,73 +7,93 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum WeekDay {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+  SUNDAY
+}
+
 model User {
   @@map("users")
 
-  id        String   @id @default(cuid())
-  email     String   @unique
-  name      String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  characters Character[]
-  weapons    Weapon[]
-  builds     Build[]
+  id              String            @id @default(cuid())
+  email           String            @unique
+  name            String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  farmAgenda      UserFarmAgenda[]
 }
 
 model Character {
   @@map("characters")
 
-  id        String   @id @default(cuid())
-  name      String
-  title     String
-  element   String?
-  rarity    Int?
-  image_Url String?
-  weapon_type String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  builds    Build[]
+  id          String               @id @default(cuid())
+  name        String
+  title       String?
+  element     String?
+  rarity      Int?
+  weaponType  String?
+  imageUrl    String?
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+  farmDays    CharacterFarmDay[]
+  agendaItems UserFarmAgenda[]
 }
 
 model Weapon {
   @@map("weapons")
 
-  id        String   @id @default(cuid())
-  name      String
-  type      String?
-  rarity    Int?
-  image_Url String?
-  weapon_type String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  builds    Build[]
+  id          String              @id @default(cuid())
+  name        String
+  type        String?
+  rarity      Int?
+  imageUrl    String?
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  farmDays    WeaponFarmDay[]
+  agendaItems UserFarmAgenda[]
 }
 
-model Build {
-  @@map("builds")
+model CharacterFarmDay {
+  @@map("character_farm_days")
+  @@unique([characterId, day])
 
-  id          String   @id @default(cuid())
-  title       String
-  notes       String?
-  priority    Int      @default(0)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id          String    @id @default(cuid())
+  characterId String
+  character   Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  day         WeekDay
+  createdAt   DateTime  @default(now())
+}
 
+model WeaponFarmDay {
+  @@map("weapon_farm_days")
+  @@unique([weaponId, day])
+
+  id        String    @id @default(cuid())
+  weaponId  String
+  weapon    Weapon    @relation(fields: [weaponId], references: [id], onDelete: Cascade)
+  day       WeekDay
+  createdAt DateTime  @default(now())
+}
+
+model UserFarmAgenda {
+  @@map("user_farm_agenda")
+
+  id          String    @id @default(cuid())
   userId      String
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   characterId String?
   character   Character? @relation(fields: [characterId], references: [id], onDelete: SetNull)
-
   weaponId    String?
-  weapon      Weapon? @relation(fields: [weaponId], references: [id], onDelete: SetNull)
+  weapon      Weapon?   @relation(fields: [weaponId], references: [id], onDelete: SetNull)
+  day         WeekDay
+  notes       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([userId, day, characterId, weaponId])
 }

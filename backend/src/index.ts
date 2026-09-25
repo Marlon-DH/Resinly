@@ -6,8 +6,26 @@ import morgan from "morgan";
 import helmet from "helmet";
 import { prisma } from "./lib/prisma.js";
 
+type WeekDay =
+  | "MONDAY"
+  | "TUESDAY"
+  | "WEDNESDAY"
+  | "THURSDAY"
+  | "FRIDAY"
+  | "SATURDAY"
+  | "SUNDAY";
+
 const app: Express = express();
 const DEFAULT_USER_EMAIL = "dev@resinly.local";
+const VALID_DAYS: WeekDay[] = [
+  "MONDAY",
+  "TUESDAY",
+  "WEDNESDAY",
+  "THURSDAY",
+  "FRIDAY",
+  "SATURDAY",
+  "SUNDAY",
+];
 
 app.use(cors({ origin: process.env.FRONTEND_URL ?? true }));
 app.use(express.json());
@@ -25,6 +43,18 @@ async function getOrCreateDefaultUser() {
       name: "Usuário local",
     },
   });
+}
+
+function normalizeDays(value: unknown): WeekDay[] {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  const normalized = value
+    .map((item) => (typeof item === "string" ? item.toUpperCase() : ""))
+    .filter((item): item is WeekDay => VALID_DAYS.includes(item as WeekDay));
+
+  return [...new Set(normalized)];
 }
 
 app.get("/", (_req: Request, res: Response) => {
@@ -69,19 +99,45 @@ app.post("/users", async (req: Request, res: Response) => {
   return res.status(201).json(user);
 });
 
-app.get("/characters", async (_req: Request, res: Response) => {
-  const user = await getOrCreateDefaultUser();
+app.get("/characters", async (req: Request, res: Response) => {
+  const search =
+    typeof req.query.search === "string" ? req.query.search.trim() : "";
+  const element =
+    typeof req.query.element === "string" ? req.query.element : undefined;
+  const rarity = req.query.rarity ? Number(req.query.rarity) : undefined;
+  const weaponType =
+    typeof req.query.weaponType === "string" ? req.query.weaponType : undefined;
 
   const characters = await prisma.character.findMany({
-    where: { userId: user.id },
-    orderBy: { createdAt: "desc" },
+    where: {
+      AND: [
+        search
+          ? {
+              OR: [
+                { name: { contains: search, mode: "insensitive" } },
+                { title: { contains: search, mode: "insensitive" } },
+              ],
+            }
+          : {},
+        element ? { element: { equals: element, mode: "insensitive" } } : {},
+        rarity ? { rarity } : {},
+        weaponType
+          ? { weaponType: { contains: weaponType, mode: "insensitive" } }
+          : {},
+      ],
+    },
+    include: {
+      farmDays: true,
+    },
+    orderBy: { name: "asc" },
   });
 
   res.json(characters);
 });
 
 app.post("/characters", async (req: Request, res: Response) => {
-  const { name, element, rarity, imageUrl } = req.body ?? {};
+  const { name, title, element, rarity, weaponType, imageUrl, farmDays } =
+    req.body ?? {};
 
   if (!name || typeof name !== "string") {
     return res
@@ -89,65 +145,66 @@ app.post("/characters", async (req: Request, res: Response) => {
       .json({ message: "Nome do personagem é obrigatório." });
   }
 
-  const user = await getOrCreateDefaultUser();
+  const normalizedDays = normalizeDays(farmDays);
 
   const character = await prisma.character.create({
     data: {
       name,
+      title: typeof title === "string" ? title : null,
       element: typeof element === "string" ? element : null,
       rarity: typeof rarity === "number" ? rarity : null,
+      weaponType: typeof weaponType === "string" ? weaponType : null,
       imageUrl: typeof imageUrl === "string" ? imageUrl : null,
-      userId: user.id,
+      farmDays: {
+        create: normalizedDays.map((day) => ({ day })),
+      },
+    },
+    include: {
+      farmDays: true,
     },
   });
 
   return res.status(201).json(character);
 });
 
-app.put("/characters/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { name, element, rarity, imageUrl } = req.body ?? {};
-
-  const character = await prisma.character.update({
-    where: { id },
-    data: {
-      name: typeof name === "string" ? name : undefined,
-      element: typeof element === "string" ? element : undefined,
-      rarity: typeof rarity === "number" ? rarity : undefined,
-      imageUrl: typeof imageUrl === "string" ? imageUrl : undefined,
-    },
-  });
-
-  res.json(character);
-});
-
-app.delete("/characters/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-
-  await prisma.character.delete({ where: { id } });
-
-  res.status(204).send();
-});
-
-app.get("/weapons", async (_req: Request, res: Response) => {
-  const user = await getOrCreateDefaultUser();
+app.get("/weapons", async (req: Request, res: Response) => {
+  const search =
+    typeof req.query.search === "string" ? req.query.search.trim() : "";
+  const type = typeof req.query.type === "string" ? req.query.type : undefined;
+  const rarity = req.query.rarity ? Number(req.query.rarity) : undefined;
 
   const weapons = await prisma.weapon.findMany({
-    where: { userId: user.id },
-    orderBy: { createdAt: "desc" },
+    where: {
+      AND: [
+        search
+          ? {
+              OR: [
+                { name: { contains: search, mode: "insensitive" } },
+                { type: { contains: search, mode: "insensitive" } },
+              ],
+            }
+          : {},
+        type ? { type: { equals: type, mode: "insensitive" } } : {},
+        rarity ? { rarity } : {},
+      ],
+    },
+    include: {
+      farmDays: true,
+    },
+    orderBy: { name: "asc" },
   });
 
   res.json(weapons);
 });
 
 app.post("/weapons", async (req: Request, res: Response) => {
-  const { name, type, rarity, imageUrl } = req.body ?? {};
+  const { name, type, rarity, imageUrl, farmDays } = req.body ?? {};
 
   if (!name || typeof name !== "string") {
     return res.status(400).json({ message: "Nome da arma é obrigatório." });
   }
 
-  const user = await getOrCreateDefaultUser();
+  const normalizedDays = normalizeDays(farmDays);
 
   const weapon = await prisma.weapon.create({
     data: {
@@ -155,70 +212,56 @@ app.post("/weapons", async (req: Request, res: Response) => {
       type: typeof type === "string" ? type : null,
       rarity: typeof rarity === "number" ? rarity : null,
       imageUrl: typeof imageUrl === "string" ? imageUrl : null,
-      userId: user.id,
+      farmDays: {
+        create: normalizedDays.map((day) => ({ day })),
+      },
+    },
+    include: {
+      farmDays: true,
     },
   });
 
   return res.status(201).json(weapon);
 });
 
-app.put("/weapons/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { name, type, rarity, imageUrl } = req.body ?? {};
-
-  const weapon = await prisma.weapon.update({
-    where: { id },
-    data: {
-      name: typeof name === "string" ? name : undefined,
-      type: typeof type === "string" ? type : undefined,
-      rarity: typeof rarity === "number" ? rarity : undefined,
-      imageUrl: typeof imageUrl === "string" ? imageUrl : undefined,
-    },
-  });
-
-  res.json(weapon);
-});
-
-app.delete("/weapons/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-
-  await prisma.weapon.delete({ where: { id } });
-
-  res.status(204).send();
-});
-
-app.get("/builds", async (_req: Request, res: Response) => {
+app.get("/agenda", async (_req: Request, res: Response) => {
   const user = await getOrCreateDefaultUser();
 
-  const builds = await prisma.build.findMany({
+  const agenda = await prisma.userFarmAgenda.findMany({
     where: { userId: user.id },
-    orderBy: { priority: "desc" },
     include: {
       character: true,
       weapon: true,
     },
+    orderBy: [{ day: "asc" }, { createdAt: "desc" }],
   });
 
-  res.json(builds);
+  res.json(agenda);
 });
 
-app.post("/builds", async (req: Request, res: Response) => {
-  const { title, notes, priority, characterId, weaponId } = req.body ?? {};
+app.post("/agenda", async (req: Request, res: Response) => {
+  const { characterId, weaponId, day, notes } = req.body ?? {};
+  const validDay = typeof day === "string" ? day.toUpperCase() : "";
 
-  if (!title || typeof title !== "string") {
-    return res.status(400).json({ message: "Título do build é obrigatório." });
+  if (!VALID_DAYS.includes(validDay as WeekDay)) {
+    return res.status(400).json({ message: "Dia da semana inválido." });
   }
 
   const user = await getOrCreateDefaultUser();
 
-  const build = await prisma.build.create({
+  if (!characterId && !weaponId) {
+    return res
+      .status(400)
+      .json({ message: "Informe personagem ou arma para a agenda." });
+  }
+
+  const agendaItem = await prisma.userFarmAgenda.create({
     data: {
-      title,
-      notes: typeof notes === "string" ? notes : null,
-      priority: typeof priority === "number" ? priority : 0,
       userId: user.id,
       characterId: typeof characterId === "string" ? characterId : null,
       weaponId: typeof weaponId === "string" ? weaponId : null,
+      day: validDay as WeekDay,
+      notes: typeof notes === "string" ? notes : null,
     },
     include: {
       character: true,
@@ -226,35 +269,13 @@ app.post("/builds", async (req: Request, res: Response) => {
     },
   });
 
-  return res.status(201).json(build);
+  return res.status(201).json(agendaItem);
 });
 
-app.put("/builds/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { title, notes, priority, characterId, weaponId } = req.body ?? {};
-
-  const build = await prisma.build.update({
-    where: { id },
-    data: {
-      title: typeof title === "string" ? title : undefined,
-      notes: typeof notes === "string" ? notes : undefined,
-      priority: typeof priority === "number" ? priority : undefined,
-      characterId: typeof characterId === "string" ? characterId : undefined,
-      weaponId: typeof weaponId === "string" ? weaponId : undefined,
-    },
-    include: {
-      character: true,
-      weapon: true,
-    },
+app.delete("/agenda/:id", async (req: Request, res: Response) => {
+  await prisma.userFarmAgenda.delete({
+    where: { id: req.params.id },
   });
-
-  res.json(build);
-});
-
-app.delete("/builds/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
-
-  await prisma.build.delete({ where: { id } });
 
   res.status(204).send();
 });
