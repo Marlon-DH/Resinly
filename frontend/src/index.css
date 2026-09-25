@@ -9,7 +9,7 @@ body {
   margin: 0;
   min-width: 320px;
   color: #2c2935;
-  background: #f7f7fb;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
   font-family: "DM Sans", Arial, sans-serif;
 }
 button,
