@@ -74,7 +74,12 @@ function parseCsv<T extends Record<string, string>>(filePath: string): T[] {
     return [] as T[];
   }
 
-  const headers = parseCsvLine(lines[0]).map((header) => header.trim());
+  const headerLine = lines[0];
+  if (!headerLine) {
+    return [] as T[];
+  }
+
+  const headers = parseCsvLine(headerLine).map((header) => header.trim());
 
   return lines.slice(1).map((line) => {
     const values = parseCsvLine(line);
@@ -168,22 +173,26 @@ async function importCharacters() {
     const name = row.name?.trim();
     if (!name) continue;
 
+    const title = row.title || row.element;
+    const weaponType = row.weapon_type || row.weaponType;
+    const imageUrl = row.image_url || row.imageUrl;
+
     const character = await prisma.character.upsert({
       where: { name },
       update: {
-        title: row.title || row.element || undefined,
-        element: row.element || undefined,
-        rarity: row.rarity ? Number(row.rarity) : undefined,
-        weaponType: row.weapon_type || row.weaponType || undefined,
-        imageUrl: row.image_url || row.imageUrl || undefined,
+        ...(title ? { title } : {}),
+        ...(row.element ? { element: row.element } : {}),
+        ...(row.rarity ? { rarity: Number(row.rarity) } : {}),
+        ...(weaponType ? { weaponType } : {}),
+        ...(imageUrl ? { imageUrl } : {}),
       },
       create: {
         name,
-        title: row.title || row.element || null,
+        title: title || null,
         element: row.element || null,
         rarity: row.rarity ? Number(row.rarity) : null,
-        weaponType: row.weapon_type || row.weaponType || null,
-        imageUrl: row.image_url || row.imageUrl || null,
+        weaponType: weaponType || null,
+        imageUrl: imageUrl || null,
       },
     });
 
@@ -220,18 +229,21 @@ async function importWeapons() {
     const name = row.name?.trim();
     if (!name) continue;
 
+    const type = row.type || row.weapon_type || row.weaponType;
+    const imageUrl = row.image_url || row.imageUrl;
+
     const weapon = await prisma.weapon.upsert({
       where: { name },
       update: {
-        type: row.type || row.weapon_type || row.weaponType || undefined,
-        rarity: row.rarity ? Number(row.rarity) : undefined,
-        imageUrl: row.image_url || row.imageUrl || undefined,
+        ...(type ? { type } : {}),
+        ...(row.rarity ? { rarity: Number(row.rarity) } : {}),
+        ...(imageUrl ? { imageUrl } : {}),
       },
       create: {
         name,
-        type: row.type || row.weapon_type || row.weaponType || null,
+        type: type || null,
         rarity: row.rarity ? Number(row.rarity) : null,
-        imageUrl: row.image_url || row.imageUrl || null,
+        imageUrl: imageUrl || null,
       },
     });
 
