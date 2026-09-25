@@ -1,7 +1,6 @@
-
 import Logo from "./Logo";
 
-type Page = "home" | "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons" | "login";
 
 export default function NavBar({
   onNavigate,
@@ -66,6 +65,7 @@ export default function NavBar({
 
       <button
         type="button"
+        onClick={() => onNavigate("login")}
         className="flex shrink-0 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-[#edf3ff] transition hover:border-[#a9c4ff]/40 hover:bg-white/10"
       >
         <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#a9c4ff]/15 text-[#a9c4ff]">
@@ -79,4 +79,3 @@ export default function NavBar({
     </header>
   );
 }
-
