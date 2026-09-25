@@ -11,13 +11,17 @@ export default function Armas({
   return (
     <div>
       <header className="topbar">
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Logo size={36} />
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <Logo size={64} />
           <div>
-            <h1>Resinly</h1>
+            <h1 className="site-title">Resinly</h1>
             <p className="eyebrow">Armas</p>
           </div>
         </div>
+        <nav className="topbar-nav">
+          <button onClick={() => onNavigate("weapons")}>Armas</button>
+          <button onClick={() => onNavigate("characters")}>Personagens</button>
+        </nav>
       </header>
     </div>
   );

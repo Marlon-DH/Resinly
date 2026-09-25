@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Logo({ size = 40 }: { size?: number }) {
+export default function Logo({ size = 64 }: { size?: number }) {
   return (
     <svg
       width={size}
@@ -24,19 +24,36 @@ export default function Logo({ size = 40 }: { size?: number }) {
 
       <rect width="64" height="64" rx="12" fill="transparent" />
 
-      <g transform="translate(8,8)">
-        <circle cx="24" cy="24" r="18" fill="url(#moonGrad)" />
-        <path
-          d="M34 20c-6 0-10 6-8 11 5-1 11-5 11-11 0-1 0-0 0-0z"
-          fill="#ffffff"
-          opacity="0.9"
+      <defs>
+        <mask id="crescentMask">
+          <rect width="64" height="64" fill="white" />
+          {/* círculo que vai "cortar" parte da lua */}
+          <circle cx="40" cy="26" r="18" fill="black" />
+        </mask>
+
+        {/* Forma de estrela (unitária) usada por <use/> e escalada */}
+        <polygon
+          id="starShape"
+          points="0,-1 0.2351,-0.3236 0.9511,-0.3090 0.3804,0.1236 0.5878,0.8090 0,0.4 -0.5878,0.8090 -0.3804,0.1236 -0.9511,-0.3090 -0.2351,-0.3236"
+        />
+      </defs>
+
+      <g transform="translate(4,4)">
+        {/* Lua minguante: desenhada como círculo com máscara para formar crescente */}
+        <circle
+          cx="28"
+          cy="28"
+          r="22"
+          fill="url(#moonGrad)"
+          mask="url(#crescentMask)"
         />
 
+        {/* Estrelas maiores em volta (usar shape unit e escalar) */}
         <g fill="url(#starGrad)">
-          <circle cx="6" cy="6" r="1.8" />
-          <circle cx="40" cy="8" r="1.2" />
-          <circle cx="10" cy="36" r="1.4" />
-          <circle cx="36" cy="32" r="1.6" />
+          <use href="#starShape" transform="translate(6,6) scale(3.6)" />
+          <use href="#starShape" transform="translate(50,10) scale(3.0)" />
+          <use href="#starShape" transform="translate(12,50) scale(3.2)" />
+          <use href="#starShape" transform="translate(44,42) scale(3.4)" />
         </g>
       </g>
     </svg>

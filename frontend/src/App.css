@@ -15,6 +15,25 @@
 .nav-link span {
   font-size: 18px;
   width: 18px;
+
+.topbar-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.topbar-nav button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: 'Cinzel Decorative', 'Uncial Antiqua', 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.topbar-nav button:hover {
+  background: rgba(255, 255, 255, 0.08);
   text-align: center;
 }
 .nav-link.active {
@@ -76,24 +95,7 @@
   width: 100%;
   padding: calc(var(--topbar-height, 64px) + 35px) 56px 55px;
 }
-.topbar {
-  --topbar-height: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(90deg, #7b2ff7 0%, #3b82f6 60%, #ffffff 100%);
-  padding: 12px 20px;
-  height: var(--topbar-height);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 30;
-  box-shadow: 0 6px 20px rgba(59, 41, 88, 0.08);
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
-  /* sem espaço para sidebar */
-}
+/* topbar styles are defined later (updated gradient) */
 
 .topbar h1,
 .topbar .eyebrow {
@@ -221,29 +223,36 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  gap: 8px;
 }
 .planner-head h2 {
   font: 700 21px "Fraunces";
   margin: 0;
 }
-.step {
-  font: 500 10px "DM Mono";
-  color: #9b93a1;
-  background: #f5f2f8;
-  padding: 6px 9px;
-  border-radius: 5px;
+.topbar {
+  --topbar-height: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #021428 0%, #0b3d91 50%, #f7e9b2 100%);
+  padding: 12px 20px;
+  height: var(--topbar-height);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 30;
+  box-shadow: 0 6px 20px rgba(5, 32, 74, 0.18);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
-.filter-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
-  margin: 22px 0 18px;
-}
-.selector-group label,
-.selectors label {
-  font: 500 10px "DM Mono";
-  letter-spacing: 0.7px;
-  color: #777080;
+
+.site-title {
+  font-family: "Cinzel Decorative", "Uncial Antiqua", "Fraunces", serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+  line-height: 1;
 }
 .planner-input,
 .planner-select,
