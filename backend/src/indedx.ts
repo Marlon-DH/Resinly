@@ -32,3 +32,11 @@ app.use(helmet());
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 });
+
+app.get("/test", (req: Request, res: Response) => {
+  res.json({ message: "Servidor está funcionando!" });
+});
+
+app.listen(port, () => {
+  console.log(`Servidor iniciado em: http://localhost:${port}`);
+});
