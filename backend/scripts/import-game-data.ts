@@ -29,6 +29,12 @@ type WeaponCsvRow = {
   farmDays?: string;
 };
 
+function getArgValue(name: string): string | undefined {
+  const index = process.argv.indexOf(name);
+  if (index === -1) return undefined;
+  return process.argv[index + 1];
+}
+
 function parseCsvLine(line: string): string[] {
   const result: string[] = [];
   let current = "";
@@ -126,11 +132,21 @@ function normalizeDay(value: string): string[] {
 }
 
 function resolveCsvPath(fileName: string): string | null {
+  const explicitPath =
+    fileName === "characters.csv"
+      ? getArgValue("--characters")
+      : getArgValue("--weapons");
+
+  if (explicitPath) {
+    return path.resolve(process.cwd(), explicitPath);
+  }
+
   const candidates = [
     path.resolve(process.cwd(), "data", fileName),
     path.resolve(process.cwd(), "..", "data", fileName),
     path.resolve(process.cwd(), "..", "frontend", "data", fileName),
     path.resolve(process.cwd(), "..", "..", "frontend", "data", fileName),
+    path.resolve(process.cwd(), fileName),
   ];
 
   return candidates.find((filePath) => fs.existsSync(filePath)) ?? null;
@@ -140,7 +156,8 @@ async function importCharacters() {
   const filePath = resolveCsvPath("characters.csv");
   if (!filePath) {
     console.log(
-      "Arquivo characters.csv não encontrado. Pulando importação de personagens.",
+      "Arquivo characters.csv não encontrado. Pulando importação de personagens. Use --characters " +
+        "<caminho-do-arquivo>.",
     );
     return;
   }
@@ -179,7 +196,7 @@ async function importCharacters() {
       await prisma.characterFarmDay.createMany({
         data: days.map((day) => ({
           characterId: character.id,
-          day: day as never,
+          day: day as any,
         })),
       });
     }
@@ -227,7 +244,7 @@ async function importWeapons() {
       await prisma.weaponFarmDay.createMany({
         data: days.map((day) => ({
           weaponId: weapon.id,
-          day: day as never,
+          day: day as any,
         })),
       });
     }

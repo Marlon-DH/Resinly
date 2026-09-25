@@ -92,7 +92,7 @@ app.post("/users", async (req: Request, res: Response) => {
   const user = await prisma.user.create({
     data: {
       email,
-      name: typeof name === "string" ? name : undefined,
+      name: typeof name === "string" ? name : null,
     },
   });
 
@@ -273,11 +273,17 @@ app.post("/agenda", async (req: Request, res: Response) => {
 });
 
 app.delete("/agenda/:id", async (req: Request, res: Response) => {
+  const id = typeof req.params.id === "string" ? req.params.id : "";
+
+  if (!id) {
+    return res.status(400).json({ message: "ID da agenda inválido." });
+  }
+
   await prisma.userFarmAgenda.delete({
-    where: { id: req.params.id },
+    where: { id },
   });
 
-  res.status(204).send();
+  return res.status(204).send();
 });
 
 app.listen(port, () => {

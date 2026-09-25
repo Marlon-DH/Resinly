@@ -32,7 +32,7 @@ model Character {
   @@map("characters")
 
   id          String               @id @default(cuid())
-  name        String
+  name        String               @unique
   title       String?
   element     String?
   rarity      Int?
@@ -48,7 +48,7 @@ model Weapon {
   @@map("weapons")
 
   id          String              @id @default(cuid())
-  name        String
+  name        String              @unique
   type        String?
   rarity      Int?
   imageUrl    String?
