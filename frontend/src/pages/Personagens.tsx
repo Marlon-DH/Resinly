@@ -3,7 +3,7 @@ import EntityCard from "../components/EntityCard";
 import NavBar from "../components/NavBar";
 import { api, type Character } from "../lib/api";
 
-type Page = "home" | "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons" | "login";
 
 type Personagem = Character & {
   title?: string | null;

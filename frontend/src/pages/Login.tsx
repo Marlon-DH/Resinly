@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Sparkles,
-  ArrowRight,
-  Globe,
-  Check,
-  Loader2 
-} from "lucide-react";
+import { Sparkles, ArrowRight, Check, Globe } from "lucide-react";
 
 const MoonLogo = ({ size = 170, isActive = false }) => {
   return (
@@ -236,11 +230,9 @@ export default function App() {
 
       <div className="relative flex min-h-screen items-center justify-center p-4 md:p-6">
         <div className="relative w-full max-w-[950px] overflow-hidden rounded-[28px] border border-white/10 bg-black/40 backdrop-blur-2xl shadow-[0_0_50px_rgba(0,0,0,0.8),0_0_20px_rgba(59,130,246,0.15)] transition-all duration-700">
-
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[580px]">
-
             <div
               className={`relative flex flex-col items-center justify-center p-8 transition-all duration-700 lg:col-span-6 ${
                 loginAtivo
@@ -249,9 +241,7 @@ export default function App() {
               }`}
             >
               <div className="relative flex flex-col items-center justify-center w-full max-w-[340px]">
-
                 <div className="relative h-[260px] w-[300px] flex items-center justify-center">
-
                   <div
                     className={`
                       absolute left-1/2 top-1/2 h-[240px] w-[240px] -translate-x-1/2 -translate-y-1/2
@@ -279,10 +269,12 @@ export default function App() {
                   {ESTRELAS_CONFIG.map((estrela) => (
                     <div
                       key={estrela.id}
-                      style={{
-                        "--delay": estrela.delay,
-                        "--duration": estrela.duration,
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          "--delay": estrela.delay,
+                          "--duration": estrela.duration,
+                        } as React.CSSProperties
+                      }
                       className={`
                         absolute leading-none pointer-events-none select-none animate-twinkle
                         ${estrela.pos} ${estrela.size} ${estrela.color}
@@ -326,15 +318,11 @@ export default function App() {
                     border border-blue-400/30
                   `}
                 >
-                  <span>
-                    {loginAtivo ? "Ocultar Login" : "Iniciar Acesso"}
-                  </span>
+                  <span>{loginAtivo ? "Ocultar Login" : "Iniciar Acesso"}</span>
 
                   <ArrowRight
                     className={`w-4 h-4 transition-transform duration-300 ${
-                      loginAtivo
-                        ? "rotate-180"
-                        : "group-hover:translate-x-1"
+                      loginAtivo ? "rotate-180" : "group-hover:translate-x-1"
                     }`}
                   />
                 </button>
@@ -352,7 +340,6 @@ export default function App() {
               `}
             >
               <div className="w-full max-w-sm mx-auto">
-
                 <div className="mb-6">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-medium mb-3">
                     <Sparkles className="w-3.5 h-3.5" />
@@ -374,9 +361,7 @@ export default function App() {
                       <Check className="w-4 h-4" />
                     </div>
 
-                    <span>
-                      Login realizado com sucesso! Redirecionando...
-                    </span>
+                    <span>Login realizado com sucesso! Redirecionando...</span>
                   </div>
                 )}
 
@@ -400,24 +385,21 @@ export default function App() {
                     <div className="w-5 h-5 border-2 border-slate-400/40 border-t-slate-800 rounded-full animate-spin" />
                   ) : (
                     <>
-                      <Chrome className="w-5 h-5" />
+                      <Globe className="w-5 h-5" />
                       <span>Continuar com Google</span>
                     </>
                   )}
                 </button>
 
                 <p className="text-center text-xs text-slate-500 mt-6">
-                  Ao continuar, você será direcionado para a autenticação
-                  segura do Google.
+                  Ao continuar, você será direcionado para a autenticação segura
+                  do Google.
                 </p>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   );
 }
-

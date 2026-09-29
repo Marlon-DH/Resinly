@@ -3,7 +3,7 @@ import EntityCard from "../components/EntityCard";
 import NavBar from "../components/NavBar";
 import { api, type Weapon } from "../lib/api";
 
-type Page = "home" | "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons" | "login";
 
 type Arma = Weapon & {
   level?: number | string | null;
@@ -16,8 +16,7 @@ type Arma = Weapon & {
 export default function Armas({
   onNavigate,
 }: {
-  // Accept any to avoid conflicting Page types between modules
-  onNavigate: (p: any) => void;
+  onNavigate: (p: Page) => void;
 }) {
   const [weapons, setWeapons] = useState<Arma[]>([]);
   const [busca, setBusca] = useState("");
