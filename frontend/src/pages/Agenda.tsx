@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import { api, type Build } from "../lib/api";
 
-type Page = "home" | "agenda" | "characters" | "weapons";
+type Page = "home" | "agenda" | "characters" | "weapons" | "login";
 
 export default function Agenda({
   onNavigate,

@@ -16,7 +16,8 @@ type Arma = Weapon & {
 export default function Armas({
   onNavigate,
 }: {
-  onNavigate: (p: Page) => void;
+  // Accept any to avoid conflicting Page types between modules
+  onNavigate: (p: any) => void;
 }) {
   const [weapons, setWeapons] = useState<Arma[]>([]);
   const [busca, setBusca] = useState("");
