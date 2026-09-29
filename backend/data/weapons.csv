@@ -1,0 +1,250 @@
+﻿id,name,type,image_url,rarity,weapon_type
+1,Absolvição,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Estoc.png,5,Espada
+2,Akuoumaru,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Maria.png,4,Espadão
+3,Caçador do Beco,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Outlaw.png,4,Arco
+4,Lâmina Amenoma Kageuta,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Bakufu.png,4,Espada
+5,Arco de Amos,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Amos.png,5,Arco
+6,Os Sete Éditos da Poeira e Luz,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_FairyGarden.png,4,Catalisador
+7,Anotações do Aprendiz,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Apprentice.png,1,Catalisador
+8,Aqua Simulacra,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Kirin.png,5,Arco
+9,Falcão,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Falcon.png,5,Espada
+10,Cálice de Chifre Cinza Escarlate,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_ConchSprayer.png,4,Catalisador
+11,Plumagem Escarlate do Abutre Astral,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Qoyllorsnova.png,5,Arco
+12,Chave da Transcendência,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_CrystallineSword.png,5,Espadão
+13,Corrupção Sombria,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Motsognir.png,4,Espada
+14,Mil Sóis Ardentes,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_RadianceSword.png,5,Espadão
+15,Sonhos Flutuantes das Mil Noites,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Ayus.png,5,Catalisador
+16,Azul Brilhante,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_OuterSword.png,5,Espada
+17,Canção do Vasto Azul,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_DandelionPoem.png,4,Catalisador
+18,Canção do Fiorde,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Shanty.png,4,Lança
+19,Sinal dos Mares,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Deshret.png,5,Espadão
+20,Protetor de Iniciante,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Gewalt.png,1,Lança
+21,Ágata do Penhasco Obscuro,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Blackrock.png,4,Catalisador
+22,Espada do Penhasco Obscuro,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Blackrock.png,4,Espada
+23,Lança do Penhasco Obscuro,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Blackrock.png,4,Lança
+24,Foice do Penhasco Obscuro,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Blackrock.png,4,Espadão
+25,Arco do Penhasco Obscuro,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Blackrock.png,4,Arco
+26,Lanterna do Tutano Preto,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Ilmarinen.png,4,Catalisador
+27,Borla Preta,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Noire.png,3,Lança
+28,Lâmina da Redenção,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_GlintstoneClaymore.png,4,Espadão
+29,Ruínas Ensanguentadas,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_TummaLyhty.png,4,Lança
+30,Espadão Sangrento,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Siegfry.png,3,Espadão
+31,Calamidade de Eshu,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_SacrificialNgombe.png,4,Espada
+32,Subjugadora de Calamidades,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Santika.png,5,Lança
+33,Supervisão de Caixa,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Wheatley.png,5,Catalisador
+34,Quebrador de Correntes,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Isikhulu.png,4,Arco
+35,Haste de Cinábrio,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Opus.png,4,Espada
+36,Duelo de Reis,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_SandMemoria.png,4,Catalisador
+37,Tocador de Nuvens,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Ultimatum.png,4,Arco
+38,Arco Composto,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Exotic.png,4,Arco
+39,Lâmina Fria,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Steel.png,3,Espada
+40,Pacto do Gelo e Neve,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_GlintstoneBow.png,4,Arco
+41,Chamado Ecoante da Garça,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_MountainGale.png,5,Catalisador
+42,Pique Crescente,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Exotic.png,4,Lança
+43,Semblante da Lua Carmesim,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_BloodMoon.png,5,Lança
+44,Espada de Ferro Negro,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Darker.png,3,Espada
+45,Estrela Gelada,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Ziedas.png,3,Catalisador
+46,Lança do Duelo,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Gladiator.png,4,Lança
+47,Pacifista,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Reasoning.png,4,Espadão
+48,Conversas dos Sábios do Deserto,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Caduceus.png,4,Lança
+49,Desastre e Remorso,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Carbine.png,5,Lança
+50,Contos de Dodoco,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Ludiharpastum.png,4,Catalisador
+51,Perdição do Dragão,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Stardust.png,3,Lança
+52,Lança da Espinha do Dragão,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Everfrost.png,4,Lança
+53,Lâmina Sem Fio,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Blunt.png,1,Espada
+54,Estremecedor da Terra,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Isikhulu.png,4,Espadão
+55,Ecos do Coração,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_GlintstoneCatalyst.png,4,Catalisador
+56,Elegia do Suspiro Final,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Widsith.png,5,Arco
+57,Fonte da Ignição,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_GlintstoneSword.png,4,Espada
+58,Orbe de Esmeralda,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Jade.png,3,Catalisador
+59,Águas Secas,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Fin.png,4,Arco
+60,Luz do Cortador de Grama,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Narukami.png,5,Lança
+61,Lira do Tecedor da Luz,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_SeeliesLute.png,5,Catalisador
+62,Fumetsu Gekka,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Kaleido.png,5,Catalisador
+63,Sabre da Ponta Estelar,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_WeaponQuestSnezhnaya.png,4,Espada
+64,Olho da Percepção,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Truelens.png,4,Catalisador
+65,Crepúsculo Desvanecido,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Fallensun.png,4,Arco
+66,Presa do Rei da Montanha,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_EmeraldSword.png,5,Espadão
+67,Codex de Favonius,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Zephyrus.png,4,Catalisador
+68,Grande Espada de Favonius,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Zephyrus.png,4,Espadão
+69,Lança de Favonius,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Zephyrus.png,4,Lança
+70,Espada de Favonius,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Zephyrus.png,4,Espada
+71,Arco de Favonius,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Zephyrus.png,4,Arco
+72,Sombra de Ferro,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Glaive.png,3,Espadão
+73,Espada Pútrida,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Magnum.png,4,Espada
+74,Lâmina de Filés,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Sashimi.png,3,Espada
+75,Epílogo das Profundezas,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Vorpal.png,4,Espada
+76,Forja da Sabedoria,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Polilith.png,4,Espadão
+77,Cruzamento de Fleuve Cendre,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Machination.png,4,Espada
+78,Penas Cercadas de Flores,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Umpakati.png,4,Arco
+79,Fluxo da Pureza,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Vorpal.png,4,Catalisador
+80,Flauta de Ezpitzal,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Isikhulu.png,4,Espada
+81,Trilha do Arco-Íris,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Isikhulu.png,4,Lança
+82,Espada Real da Floresta,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Arakalari.png,4,Espadão
+83,Forjada pela Lei Dourada,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_EscapeWheel.png,4,Espadão
+84,Resplendor Fragmentado,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Perdix.png,4,Lança
+85,Juramento pela Liberdade,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Widsith.png,4,Espada
+86,Fruto do Sabugueiro,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Everfrost.png,4,Catalisador
+87,Sopro Gélido,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_FaesCrystalle.png,4,Lança
+88,Gancho Frutífero,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Umpakati.png,4,Espadão
+89,Fruto da Abundância,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Arakalari.png,4,Catalisador
+90,Balada do Poderoso Lobo,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_EnsisAquilonis.png,5,Espadão
+91,Ramo Dourado do Juramento Gelado,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Alkonost.png,5,Arco
+92,Anel de Hakushin,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Bakufu.png,4,Catalisador
+93,Alabarda,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Halberd.png,3,Lança
+94,Arco Quebra-Demônios,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Bakufu.png,4,Arco
+95,Maremoto da Lua de Futsu,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Amenoma.png,5,Espada
+96,Prenúncio do Alvorecer,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Dawn.png,3,Espada
+97,Lâmina Derretida do Herege,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_SerpentTooth.png,4,Espada
+98,Arco do Caçador,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Hunters.png,1,Arco
+99,Caminho do Caçador,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Ayus.png,5,Arco
+100,Bico de Íbis,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Ibis.png,4,Arco
+101,Ponta de Ferro,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Rod.png,2,Lança
+102,Espinho de Ferro,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Exotic.png,3,Espada
+103,Esplendor Índigo,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Morax.png,5,Catalisador
+104,Vista da Jade Primordial,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_ShatteredMirror.png,4,Arco
+105,Kagotsurube Isshin,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Youtou.png,4,Espada
+106,Prova de Kagura,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Narukami.png,5,Catalisador
+107,Espada Grande de Katsuragi,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Bakufu.png,4,Espadão
+108,Chave de Hierofania,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Deshret.png,5,Espada
+109,Vassalo do Rei,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Arakalari.png,4,Arco
+110,Lança Cruzada de Kitain,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Bakufu.png,4,Lança
+111,Fragmento Lunar da Luz,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_SilverwareSaw.png,4,Espada
+112,Luz das Folhas Cortadas,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Ayus.png,5,Espada
+113,Rugido do Leão,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Rockkiller.png,4,Espada
+114,Espada Antiga de Millelith,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Lapis.png,4,Espadão
+115,Lança de Millelith,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Lapis.png,4,Lança
+116,Oração Perdida aos Ventos Sagrados,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fourwinds.png,5,Catalisador
+117,Elegia Lumidouce,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Muguet.png,5,Lança
+118,Lorde do Mar Luxuoso,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_MillenniaTuna.png,4,Espadão
+119,Guia de Magia,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Intro.png,3,Catalisador
+120,Flor de Aço,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Fleurfair.png,4,Espadão
+121,Água-Marinha de Mahara,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Pleroma.png,4,Espadão
+122,Mappa Mare,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Exotic.png,4,Catalisador
+123,Chave Mestra,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Ilmarinen.png,4,Espadão
+124,Memória da Poeira,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Kunwu.png,5,Catalisador
+125,Mensageiro,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Msg.png,3,Arco
+126,Lâmina do Vento Mensageiro,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Windvane.png,4,Lança
+127,Cortadora da Neblina Reforjada,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Narukami.png,5,Espada
+128,Valsa do Crepúsculo,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Nachtblind.png,4,Arco
+129,Perfurador de Luas,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Arakalari.png,4,Lança
+130,Alvorada do Tecedor do Luar,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Miekka.png,5,Espada
+131,Prego Esmagador de Montanhas,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Umpakati.png,4,Lança
+132,Lua de Mouun,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Maria.png,4,Arco
+133,Luneta do Tecedor da Noite,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_MenulisRing.png,5,Catalisador
+134,Cortinas Noturnas,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Brisingamen.png,5,Catalisador
+135,Olho do Juramento,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Jyanome.png,4,Catalisador
+136,Espada do Mercenário,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Oyaji.png,4,Espadão
+137,Histórias de Outros Mundos,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Lightnov.png,3,Catalisador
+138,Canção da Patrulha do Pico,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_XochitlsTube.png,5,Espada
+139,Grimório de Bolso,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Pocket.png,2,Catalisador
+140,Estrela Invernal,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Worldbane.png,5,Arco
+141,Serra Elétrica Portátil,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Mechanic.png,4,Espadão
+142,Predador,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Predator.png,4,Arco
+143,Cortador de Jade Primordial,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Morax.png,5,Espada
+144,Lança de Jade Primitiva,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Morax.png,5,Lança
+145,"Espada Famosa da ""Arte Isshin""",Espada,,4,Espada
+146,"Espada Famosa da ""Arte Isshin""",Espada,,4,Espada
+147,"Espada Famosa da ""Arte Isshin""",Espada,,4,Espada
+148,Broca do Prospector,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Mechanic.png,4,Lança
+149,Pá do Escavador,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Ilmarinen.png,4,Lança
+150,Protótipo Âmbar,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Proto.png,4,Catalisador
+151,Protótipo Arcaico,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Proto.png,4,Espadão
+152,Protótipo da Luz Lunar Pálida,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Proto.png,4,Arco
+153,Protótipo Rancor,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Proto.png,4,Espada
+154,Protótipo Estelar,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Proto.png,4,Lança
+155,Cordas da Chuva da Serpente Arco-Íris,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_ElegguaBow.png,4,Arco
+156,Segadeira da Chuva,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Perdue.png,4,Espadão
+157,Medidor de Alcance,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Mechanic.png,4,Arco
+158,Arco de Corvo,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Crowfeather.png,3,Arco
+159,Arco Recurvado,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Curve.png,3,Arco
+160,Chifres Vermelhos Destruidores de Pedras,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Itadorimaru.png,5,Espadão
+161,Relicário da Verdade,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Sistrum.png,5,Catalisador
+162,Justa Recompensa,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Vorpal.png,4,Lança
+163,Anel de Yaxche,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Isikhulu.png,4,Catalisador
+164,Arco Real,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Theocrat.png,4,Arco
+165,Espadão Real,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Theocrat.png,4,Espadão
+166,Grimório Real,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Theocrat.png,4,Catalisador
+167,Espada Longa Real,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Theocrat.png,4,Espada
+168,Lança de Caça Real,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Theocrat.png,4,Lança
+169,Arco Enferrujado,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Recluse.png,4,Arco
+170,Cajado do Sacrificador,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Krivule.png,4,Lança
+171,Arco do Sacrifício,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Fossil.png,4,Arco
+172,Memórias de Sacrifício,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Fossil.png,4,Catalisador
+173,Espadão do Sacrifício,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Fossil.png,4,Espadão
+174,Sacrifício de Jade,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Yue.png,4,Catalisador
+175,Espada do Sacrifício,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Fossil.png,4,Espada
+176,Espada de Madeira,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Arakalari.png,4,Espada
+177,Herdeiro do Sol,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Gurabad.png,4,Arco
+178,Arco do Caçador Experiente,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Old.png,2,Arco
+179,Ritmo da Solidão,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Stinger.png,4,Arco
+180,Chamado da Serenidade,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Ilmarinen.png,4,Espada
+181,Espinha Dorsal da Serpente,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Kione.png,4,Espadão
+182,Juramento de Sagitário,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Arjuna.png,4,Arco
+183,Cordas da Chuva Branca,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Arcdange.png,4,Arco
+184,Espada de Prata,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Silver.png,2,Espada
+185,Espadão do Cavaleiro do Céu,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Mitsurugi.png,4,Espadão
+186,Espada do Cavaleiro do Céu,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Mitsurugi.png,4,Espada
+187,Atlas Celestial,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Dvalin.png,5,Catalisador
+188,Espada Celestial,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Dvalin.png,5,Espada
+189,Harpa Celestial,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Dvalin.png,5,Arco
+190,Orgulho Celestial,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Dvalin.png,5,Espadão
+191,Espinha Celestial,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Dvalin.png,5,Lança
+192,Estilingue,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Sling.png,3,Arco
+193,Gancho da Armadilha,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Ilmarinen.png,4,Arco
+194,Estrela de Prata Enterrada na Neve,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Dragonfell.png,4,Espadão
+195,Pérola Solar,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Resurrection.png,4,Catalisador
+196,Canção dos Pinhos,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Widsith.png,5,Espadão
+197,Canção do Silêncio,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Vorpal.png,4,Arco
+198,Canção da Vigília,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_GlintstonePolearm.png,4,Lança
+199,Esplendor das Águas Silenciosas,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Regalis.png,5,Espada
+200,Báculo de Homa,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Homa.png,5,Lança
+201,Báculo das Areias Escarlates,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Deshret.png,5,Lança
+202,Observatório do Chamador de Estrelas,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Figurines.png,5,Catalisador
+203,Osso Robusto,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Umpakati.png,4,Espada
+204,Cortador de Montanhas,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Kunwu.png,5,Espada
+205,Hibernação Matinal do Ano Novo,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_SakuraFan.png,5,Catalisador
+206,Hora do Surfe,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_MechaPufferfish.png,5,Catalisador
+207,Espada do Advento,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Psalmus.png,4,Espada
+208,Espada da Cruz de Narcissus,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Purewill.png,4,Espada
+209,Sinfonista de Aromas,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Trident.png,5,Lança
+210,Diálogo,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_BeastTamer.png,4,Espadão
+211,Fofocas Breves do Pavilhão,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Aoandon.png,4,Lança
+212,Brilho do Beco,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Outlaw.png,4,Espada
+213,O Sino,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Troupe.png,4,Espadão
+214,Espada Negra,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Bloodstained.png,4,Espada
+215,"""A Fisgada""",Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Mori.png,4,Lança
+216,As Crônicas do Amanhecer,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Arianna.png,4,Arco
+217,A Doca,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Mechanic.png,4,Espada
+218,Arcana Original,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Pledge.png,4,Arco
+219,A Flauta,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Troupe.png,4,Espada
+220,Último Acorde,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Troupe.png,4,Arco
+221,Espada Áspera,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Kunwu.png,4,Espadão
+222,Arco Esmeralda do Caçador,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Viridescent.png,3,Arco
+223,Sinfonia dos Indolentes,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Troupe.png,4,Catalisador
+224,Histórias Extraordinárias de Caçadores de Dragões,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Pulpfic.png,4,Catalisador
+225,Agitação Trovejante,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Narukami.png,5,Arco
+226,Lâmina das Ondas,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Vorpal.png,4,Espadão
+227,Rito do Fluxo Eterno,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Iudex.png,5,Catalisador
+228,Chuva Floral,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Kasabouzu.png,4,Espada
+229,Espada do Viajante,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Traveler.png,3,Espada
+230,Reminiscências de Tulaytullah,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Alaya.png,5,Catalisador
+231,Nefrita Gêmea,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Phoney.png,3,Catalisador
+232,Mega Ultra Espada Mágica do Soberano,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Champion.png,4,Espadão
+233,Urakugo Rensai,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Needle.png,5,Espada
+234,Veredito,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_GoldenVerdict.png,5,Espadão
+235,Coração Resplandecente,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_VaresaTransformer.png,5,Catalisador
+236,Perfuradora Prismática,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Kunwu.png,5,Lança
+237,Estrela Itinerante,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Pleroma.png,4,Catalisador
+238,Espadão do Julgamento,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Aniki.png,4,Espadão
+239,Barbatana do Quebra Ondas,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Maria.png,4,Lança
+240,Redemoinho das Ondas,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Umpakati.png,4,Catalisador
+241,Sombra Branca,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Exotic.png,3,Espadão
+242,Espadão de Ferro Branco,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Tin.png,3,Espadão
+243,Asa Gelada do Lago Branco,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Swanlake.png,4,Espada
+244,Borla Branca,Lança,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Pole_Ruby.png,3,Lança
+245,Ode à Brisa Florescente,Arco,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Bow_Fleurfair.png,4,Arco
+246,Vinho e Música,Catalisador,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Catalyst_Outlaw.png,4,Catalisador
+247,Farpa,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Boreas.png,3,Espada
+248,Túmulo do Lobo,Espadão,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Claymore_Wolfmound.png,5,Espadão
+249,Luz Lunar de Xiphos,Espada,https://upload-os-bbs.mihoyo.com/game_record/genshin/equip/UI_EquipIcon_Sword_Pleroma.png,4,Espada

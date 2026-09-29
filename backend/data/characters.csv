@@ -1,0 +1,123 @@
+﻿id,name,element,title,image_url,weapon_type,rarity
+3,Aether,Viajante,Viajante de outro mundo,https://enka.network/ui/UI_AvatarIcon_PlayerBoy.png,Espada,5
+4,Aino,Hydro,Clinky-Clank Gadgets-A-Gogo,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Aino.png,Espadão,4
+5,Albedo,Geo,Kreideprinz,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Albedo.png,Espada,5
+6,Alhaitham,Dendro,Admonishing Instruction,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Alhatham.png,Espada,5
+7,Aloy,Cryo,Savior From Another World,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Aloy.png,Arco,5
+8,Alyosha,Electro,Swift-Striding Hound,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Alyosha.png,Lança,4
+9,Amber,Pyro,Gliding Champion,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ambor.png,Arco,4
+10,Arataki Itto,Geo,Hanamizaka Heroics,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Itto.png,Espadão,5
+11,Arlecchino,Pyro,Dire Balemoon,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Arlecchino.png,Lança,5
+12,Baizhu,Dendro,Beyond Mortality,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Baizhuer.png,Catalisador,5
+13,Barbara,Hydro,Shining Idol,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Barbara.png,Catalisador,4
+14,Beidou,Electro,Uncrowned Lord of the Ocean,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Beidou.png,Espadão,4
+15,Bennett,Pyro,Trial by Fire,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Bennett.png,Espada,4
+16,Candace,Hydro,Golden Vow,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Candace.png,Lança,4
+17,Charlotte,Cryo,Lens of Verity,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Charlotte.png,Catalisador,4
+18,Chasca,Anemo,Skyborne Arbiter,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Chasca.png,Arco,5
+19,Chevreuse,Pyro,Executor of Justice,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Chevreuse.png,Lança,4
+20,Chiori,Geo,The Thundering Seamstress,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Chiori.png,Espada,5
+21,Chongyun,Cryo,Frozen Ardor,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Chongyun.png,Espadão,4
+22,Citlali,Cryo,Obsidian Opalstar,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Citlali.png,Catalisador,5
+23,Clorinde,Electro,"Candlebearer, Shadowhunter",https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Clorinde.png,Espada,5
+24,Collei,Dendro,Sprout of Rebirth,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Collei.png,Arco,4
+25,Columbina,Hydro,Welkin Moon's Homecoming,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Columbina.png,Catalisador,5
+26,Cyno,Electro,Judicator of Secrets,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Cyno.png,Lança,5
+27,Dahlia,Hydro,Ode and Oblation,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Dahlia.png,Catalisador,4
+28,Dehya,Pyro,Flame-Mane,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Dehya.png,Espadão,5
+29,Diluc,Pyro,Dark Side of Dawn,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Diluc.png,Espadão,5
+30,Diona,Cryo,Kätzlein Cocktail,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Diona.png,Arco,4
+31,Dori,Electro,Treasure of Dream Garden,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Dori.png,Espadão,4
+32,Durin,Pyro,"""The Undying Fire""",https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Durin.png,Espada,5
+33,Emilie,Dendro,A Thousand Scents Traced,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Emilie.png,Lança,5
+34,Escoffier,Cryo,Tasteful Excellence,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Escoffier.png,Lança,5
+35,Eula,Cryo,Dance of the Shimmering Wave,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Eula.png,Espadão,5
+36,Faruzan,Anemo,Enigmatic Machinist,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Faruzan.png,Arco,4
+37,Fischl,Electro,Prinzessin der Verurteilung!,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Fischl.png,Arco,4
+38,Flins,Electro,"Shadowy Lights, Stranger Wights",https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Flins.png,Lança,5
+39,Freminet,Cryo,Yearning for Unseen Depths,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Freminet.png,Espadão,4
+40,Furina,Hydro,Endless Solo of Solitude,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Furina.png,Espada,5
+41,Gaming,Pyro,Leonine Vanguard,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Gaming.png,Espadão,4
+42,Ganyu,Cryo,Plenilune Gaze,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ganyu.png,Arco,5
+43,Gorou,Geo,Canine Warrior,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Gorou.png,Arco,4
+44,Hu Tao,Pyro,Fragrance in Thaw,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Hutao.png,Lança,5
+45,Iansan,Electro,Tempered in Molten Stone,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Iansan.png,Lança,4
+46,Ifa,Anemo,In the Wake of Wandering Winds,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ifa.png,Catalisador,4
+47,Illuga,Geo,Nightmare's Burning Heart,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Illuga.png,Lança,4
+48,Ineffa,Electro,Boom Boom Thunderwave,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ineffa.png,Lança,4
+49,Jahoda,Anemo,Windthreading Shadow,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Jahoda.png,Arco,4
+50,Jean,Anemo,Dandelion Knight,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qin.png,Espada,5
+51,Kachina,Geo,Mottled Gold Yet Unsmelted,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kachina.png,Lança,4
+52,Kaedehara Kazuha,Anemo,Scarlet Leaves Pursue Wild Waves,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kazuha.png,Espada,5
+53,Kaeya,Cryo,Frostwind Swordsman,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kaeya.png,Espada,4
+54,Kamisato Ayaka,Cryo,Frostflake Heron,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ayaka.png,Espada,4
+55,Kamisato Ayato,Hydro,Pillar of Fortitude,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ayato.png,Espada,4
+56,Kaveh,Dendro,Empyrean Reflection,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kaveh.png,Espadão,4
+57,Keqing,Electro,Driving Thunder,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Keqing.png,Espada,5
+58,Kinich,Dendro,Turnfire Hunt,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kinich.png,Espadão,5
+59,Kirara,Dendro,Cat Upon the Eaves,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Momoka.png,Espada,4
+60,Klee,Pyro,Fleeing Sunlight,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Klee.png,Catalisador,5
+61,Kujou Sara,Electro,Crowfeather Kaburaya,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sara.png,Arco,4
+62,Kuki Shinobu,Electro,Mender of Tribulations,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Shinobu.png,Espada,4
+63,Lan Yan,Anemo,Spring Woven From Jade,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Lanyan.png,Catalisador,4
+64,Lauma,Dendro,Evermoon's Sacrament Song,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Lauma.png,Catalisador,5
+65,Layla,Cryo,Fantastical Evening Star,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Layla.png,Espada,4
+66,Linnea,Geo,Augur of Wonders,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Linnea.png,Arco,5
+67,Lisa,Electro,Witch of Purple Rose,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Lisa.png,Catalisador,4
+68,Lohen,Cryo,Sharpened Arrowhead,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Lohen.png,Lança,5
+69,Lumine,Viajante,Viajante de outro mundo,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_PlayerGirl.png,Espada,5
+70,Lynette,Anemo,Elegance in the Shadows,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Linette.png,Espada,4
+71,Lyney,Pyro,Spectacle of Phantasmagoria,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Liney.png,Arco,5
+72,Manekin,Viajante,Viajante de outro mundo,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_MannequinBoy.png,Espada,5
+73,Manekina,Viajante,Viajante de outro mundo,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_MannequinGirl.png,Espada,5
+74,Mavuika,Pyro,Night-Igniting Flame,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mavuika.png,Espadão,5
+75,Mika,Cryo,Coordinates of Clear Frost,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mika.png,Arco,4
+76,Mona,Hydro,Astral Reflection,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mona.png,Catalisador,5
+77,Mualani,Hydro,Splish-Splash Wavechaser,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mualani.png,Catalisador,5
+78,Nahida,Dendro,Physic of Purity,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Nahida.png,Catalisador,5
+79,Navia,Geo,Helm of the Radiant Rose,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Navia.png,Espadão,5
+80,Nefer,Dendro,Secret Beneath the Sands,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Nefer.png,Catalisador,5
+81,Neuvillette,Hydro,Ordainer of Inexorable Judgment,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Neuvillette.png,Catalisador,5
+82,Nicole,Pyro,Clamor Within,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Nicole.png,Catalisador,5
+83,Nilou,Hydro,Dance of Lotuslight,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Nilou.png,Espada,5
+84,Ningguang,Geo,Eclipsing Star,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Ningguang.png,Catalisador,4
+85,Noelle,Geo,Chivalric Blossom,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Noel.png,Espadão,4
+86,Odette,Cryo,Swirling Snow,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Odette.png,Espada,5
+87,Ororon,Electro,Shadow of the Night-Wind,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Olorun.png,Arco,4
+88,Prune,Anemo,Childlike Dreams Cherished,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Prune.png,Catalisador,4
+89,Qiqi,Cryo,Icy Resurrection,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Qiqi.png,Espada,5
+90,Raiden Shogun,Electro,Plane of Euthymia,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Shougun.png,Lança,5
+91,Razor,Electro,Wolf Boy,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Razor.png,Espadão,4
+92,Rosaria,Cryo,Thorny Benevolence,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Rosaria.png,Lança,4
+93,Sandrone,Cryo,Mirrored Analysis,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_MarionetteNew.png,Espadão,5
+94,Sangonomiya Kokomi,Hydro,Pearl of Wisdom,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Kokomi.png,Catalisador,5
+95,Sayu,Anemo,Mujina Ninja,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sayu.png,Espadão,4
+96,Sethos,Electro,Wisdom's Measure,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sethos.png,Arco,4
+97,Shenhe,Cryo,Lonesome Transcendence,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Shenhe.png,Lança,5
+98,Shikanoin Heizou,Anemo,Analytical Harmony,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Heizo.png,Catalisador,4
+99,Sigewinne,Hydro,Wondrous Dragonheir,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sigewinne.png,Arco,5
+100,Skirk,Cryo,Void Star,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_SkirkNew.png,Espada,5
+101,Sucrose,Anemo,Harmless Sweetie,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Sucrose.png,Catalisador,4
+102,Tartaglia,Hydro,Childe,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tartaglia.png,Arco,5
+103,Thoma,Pyro,Protector From Afar,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tohma.png,Lança,4
+104,Tighnari,Dendro,Verdant Strider,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Tighnari.png,Arco,5
+105,Varesa,Electro,Strength in Serenity,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Varesa.png,Catalisador,5
+106,Varka,Anemo,Knight of Boreas,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Varka.png,Espadão,5
+107,Venti,Anemo,Windborne Bard,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Venti.png,Arco,5
+108,Wanderer,Anemo,Eons Adrift,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Wanderer.png,Catalisador,5
+109,Wriothesley,Cryo,Emissary of Solitary Iniquity,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Wriothesley.png,Catalisador,5
+110,Xiangling,Pyro,Exquisite Delicacy,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xiangling.png,Lança,4
+111,Xianyun,Anemo,Passerine Herald,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Liuyun.png,Catalisador,5
+112,Xiao,Anemo,Vigilant Yaksha,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xiao.png,Lança,5
+113,Xilonen,Geo,Ardent Flames Forge the Soul,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xilonen.png,Espada,5
+114,Xingqiu,Hydro,Juvenile Galant,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xingqiu.png,Espada,4
+115,Xinyan,Pyro,Blazing Riff,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Xinyan.png,Espadão,4
+116,Yae Miko,Electro,Astute Amusement,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yae.png,Catalisador,5
+117,Yanfei,Pyro,Wise Innocence,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Feiyan.png,Catalisador,4
+118,Yaoyao,Dendro,Burgeoning Grace,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yaoyao.png,Lança,4
+119,Yelan,Hydro,Valley Orchid,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yelan.png,Arco,5
+120,Yoimiya,Pyro,Frolicking Flames,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yoimiya.png,Arco,5
+121,Yumemizuki Mizuki,Anemo,Embrace of Enchanting Dreams,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Mizuki.png,Catalisador,5
+122,Yun Jin,Geo,Stage Lucida,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Yunjin.png,Lança,4
+123,Zhongli,Geo,Vago Mundo,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Zhongli.png,Lança,5
+124,Zibai,Geo,White Horse's Fleeting Spring,https://upload-os-bbs.mihoyo.com/game_record/genshin/character_icon/UI_AvatarIcon_Zibai.png,Espada,5
