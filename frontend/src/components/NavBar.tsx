@@ -17,14 +17,33 @@ export default function NavBar({
         </span>
       </div>
 
-      <div className="hidden flex-1 justify-center px-5 md:flex">
-        <input
-          type="text"
-          className="w-full max-w-[360px] rounded-full border border-white/10 bg-transparent px-4 py-2.5 text-sm text-[#edf3ff] outline-none placeholder:text-[#b5c2d5] transition focus:border-[#a9c4ff]/60"
-          placeholder="Buscar..."
-          aria-label="Buscar"
-        />
-      </div>
+     <div className="hidden flex-1 justify-center px-5 md:flex">
+  <div className="relative w-full max-w-[360px]">
+    <input 
+      type="text" 
+      className="w-full rounded-full border border-white/10 bg-transparent pl-4 pr-10 py-2.5 text-sm text-[#edf3ff] outline-none placeholder:text-[#b5c2d5] transition focus:border-[#a9c4ff]/60" 
+      placeholder="Buscar..." 
+      aria-label="Buscar" 
+    />
+    <button 
+      type="submit" 
+      className="absolute right-3 top-1/2 -translate-y-1/2 text-[#b5c2d5] hover:text-[#edf3ff] transition"
+      aria-label="Confirmar busca"
+    >
+      <svg 
+        xmlns="http://w3.org" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        strokeWidth={1.5} 
+        stroke="currentColor" 
+        className="h-5 w-5"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.603 10.601Z" />
+      </svg>
+    </button>
+  </div>
+</div>
+
 
       <nav
         className="flex min-w-0 gap-0.5 sm:gap-2"
