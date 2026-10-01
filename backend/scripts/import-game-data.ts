@@ -2,6 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { prisma } from "../src/lib/prisma.js";
 
+declare const process: {
+  argv: string[];
+  cwd(): string;
+  exit(code?: number): void;
+};
+
 type CharacterCsvRow = {
   id?: string;
   name: string;
@@ -198,11 +204,11 @@ async function importCharacters() {
 
     const days = normalizeDay(row.farm_days ?? row.farmDays ?? "");
     if (days.length) {
-      await prisma.characterFarmDay.deleteMany({
+      await (prisma as any).characterFarmDay.deleteMany({
         where: { characterId: character.id },
       });
 
-      await prisma.characterFarmDay.createMany({
+      await (prisma as any).characterFarmDay.createMany({
         data: days.map((day) => ({
           characterId: character.id,
           day: day as any,
