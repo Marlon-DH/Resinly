@@ -90,6 +90,8 @@ model UserFarmAgenda {
   character   Character? @relation(fields: [characterId], references: [id], onDelete: SetNull)
   weaponId    String?
   weapon      Weapon?   @relation(fields: [weaponId], references: [id], onDelete: SetNull)
+  title       String?
+  priority    Int       @default(1)
   day         WeekDay
   notes       String?
   createdAt   DateTime  @default(now())

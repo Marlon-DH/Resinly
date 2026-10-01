@@ -20,11 +20,21 @@ export type Weapon = {
   updatedAt: string;
 };
 
+export type WeekDay =
+  | "MONDAY"
+  | "TUESDAY"
+  | "WEDNESDAY"
+  | "THURSDAY"
+  | "FRIDAY"
+  | "SATURDAY"
+  | "SUNDAY";
+
 export type Build = {
   id: string;
   title: string;
   notes: string | null;
   priority: number;
+  day?: WeekDay | null;
   createdAt: string;
   updatedAt: string;
   userId: string;
@@ -96,18 +106,36 @@ export const api = {
   deleteWeapon: (id: string) =>
     request<void>(`/weapons/${id}`, { method: "DELETE" }),
 
-  getBuilds: () => request<Build[]>("/builds"),
+  getAgenda: () => request<Build[]>("/agenda"),
+  createAgenda: (data: {
+    characterId?: string | null;
+    weaponId?: string | null;
+    day: WeekDay;
+    notes?: string;
+  }) =>
+    request<Build>("/agenda", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
+  deleteAgenda: (id: string) =>
+    request<void>(`/agenda/${id}`, { method: "DELETE" }),
+
+  getBuilds: () => request<Build[]>("/agenda"),
   createBuild: (data: {
     title: string;
     notes?: string;
     priority?: number;
     characterId?: string | null;
     weaponId?: string | null;
+    day?: WeekDay;
   }) =>
-    request<Build>("/builds", {
+    request<Build>("/agenda", {
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        ...data,
+        day: data.day ?? "MONDAY",
+      }),
     }),
   deleteBuild: (id: string) =>
-    request<void>(`/builds/${id}`, { method: "DELETE" }),
+    request<void>(`/agenda/${id}`, { method: "DELETE" }),
 };
